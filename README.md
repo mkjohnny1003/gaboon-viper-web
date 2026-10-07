@@ -1,7 +1,7 @@
-# GUTSY / 腸腸久久 (GUTSY: Stomach Capacity)
+# 胖蛇大作戰 Gaboon Viper（原名 GUTSY／腸腸久久）
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mkjohnny1003/esimmanager-web/main/gutsy/assets/gutsy-icon.png" alt="GUTSY Icon" width="108" height="108" style="border-radius: 22px;">
+  <img src="https://raw.githubusercontent.com/mkjohnny1003/esimmanager-web/main/assets/gutsy-icon.png" alt="Gaboon Viper Icon" width="108" height="108" style="border-radius: 22px;">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://apps.apple.com/app/id6812165648"><img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=apple&logoColor=white" alt="Download on App Store"></a>
   <a href="https://getesimmanager.com/gutsy/play/"><img src="https://img.shields.io/badge/Web_Demo-Play_Online-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Play Online Demo"></a>
-  <img src="https://img.shields.io/badge/Version-v2.0.2-f59e0b?style=for-the-badge" alt="Version 2.0.2">
+  <img src="https://img.shields.io/badge/Version-v2.0.3-f59e0b?style=for-the-badge" alt="Version 2.0.3">
   <img src="https://img.shields.io/badge/Palette-GBA_/_8--SHADE_/_4--DMG-8b5cf6?style=for-the-badge" alt="Palettes">
   <img src="https://img.shields.io/badge/License-MIT-gray?style=for-the-badge" alt="License">
 </p>
@@ -21,25 +21,23 @@
 
 ## 📖 專案簡介 (Overview)
 
-**GUTSY（腸腸久久）** 是一款融合經典掌機點陣美學與真實消化負重機制的**革新派貪食蛇遊戲**。
+**胖蛇大作戰（Gaboon Viper，原名 GUTSY／腸腸久久）** 是一款融合經典掌機點陣美學與真實消化負重機制的**革新派貪食蛇遊戲**。
 
-傳統貪食蛇吃下食物立即變長；而在 GUTSY 中，吃下的食物會化為**體內腫塊（Lumps）**，隨著爬行步伐逐漸向尾端蠕動消化。過量進食會使胃容量超載而**撐爆暴斃（BURST）**，但長時間不進食又會引發**飢餓萎縮枯竭（STARVE）**！
+傳統貪食蛇吃下食物立即變長；而在胖蛇大作戰中，吃下的食物會化為**體內腫塊（Lumps）**，隨著爬行步伐逐漸向尾端蠕動消化。過量進食會使胃容量超載而**撐爆暴斃（BURST）**，但長時間不進食又會引發**飢餓萎縮枯竭（STARVE）**！
 
-本倉庫為 **GUTSY 網頁純前端試玩版（Web Playable Prototype）**，零外部相依套件，採用原生 HTML5 Canvas + Web Audio API 打造，即開即玩。
+本倉庫為 **胖蛇大作戰網頁純前端試玩版（Web Playable Prototype）**，零外部相依套件，採用原生 HTML5 Canvas + Web Audio API 打造，即開即玩。
 
 👉 **[線上即刻試玩（官方網站）](https://getesimmanager.com/gutsy/play/)**  
-👉 **[GitHub Pages 鏡像試玩](https://mkjohnny1003.github.io/gutsy-web/)**
+👉 **[GitHub Pages 鏡像試玩](https://mkjohnny1003.github.io/gaboon-viper-web/)**
 
 ---
 
-## 🚀 v2.0.2 重大改版預告 (Coming Soon)
+## 🚀 v2.0.3 更新：改名「胖蛇大作戰」＋搶食蛇 (What's New)
 
-iOS 正式版即將迎來 **v2.0.2 重大改版**（審查中，敬請期待）：
-* 🎨 **GBA COLOR 32 位元全彩像素**：經典掌機調色盤進化，支援主選單 SELECT 鍵一鍵切換。
-* ⏱️ **5 分鐘極速「計時模式（TIME ATTACK）」**：無限胃容量（`GUT ∞`）、無飢餓（`HNG ∞`），純粹狂吃衝刺極限最高分！
-* ⚡ **場景物件擴增為 5 個**：食物與戰術道具豐富度倍增。
-* 📖 **原生彈跳「中英雙語遊戲指南」**：螢幕下方一鍵彈出 Pop-up 視窗，上下滑動暢讀中英雙語完整教學（核心消化、HUD、戰術道具與 6 大死因解析），遊玩中開啟自動安全暫停。
-* ⚖️ **關卡過關門檻平滑化**：子關卡過關條件更合理流暢。
+iOS 版 **v2.0.3** 已送交 App Store 審查（通過後自動更新）；本網頁試玩版已搶先同步：
+* 🐍 **更名「胖蛇大作戰（Gaboon Viper）」**：全新 App 圖示、開機畫面與點陣標題，玩法與存檔不受影響。
+* ⚔️ **全新挑戰「搶食蛇」**：每個世界第 5 關起，三角頭毒蛇會跟你搶蛋；搶到後要先消化（身上鼓一塊、變慢），消化完蛇頭一紅就回頭追咬你的尾巴。被牠碰到就陣亡，鑽石無敵時則能反撞把牠撞飛（+150 分）。一般與地圖模式登場，計時賽不受影響。
+* 📱 **iOS 按鍵自動適配螢幕**：十字鍵與 A/B 依 iPhone 螢幕尺寸縮放，修正小螢幕按鍵重疊。
 
 ---
 
@@ -54,7 +52,7 @@ iOS 正式版即將迎來 **v2.0.2 重大改版**（審查中，敬請期待）�
 * 🗺️ **全 10 大主題世界、100 個挑戰關卡**：包含草原、仙人掌荒漠、俄羅斯方塊磚牆、CYBER 晶片電路、息肉腔室、冰川尖刺、鐘錶齒輪、珊瑚礁、熔岩火山與奇異點。
 * 🔄 **直向 / 橫向雙模式隨心旋轉**：支援全方向陀螺儀適應，橫向模式具備左右獨立人體工學掌機握持按鈕。
 * 🏆 **Apple Game Center 全球排行榜**：即時與全世界高玩競爭歷史最長體長與極限高分。
-* 🎮 **實體遊戲手把完整支援**：相容 PS5 DualSense、Xbox 無線手把、Nintendo Switch Joy-Con / Pro 手把及 MFi 認證控制器。
+* 🎮 **實體遊戲手把完整支援**：相容 PS5 DualSense、Xbox 無線手把、Switch Joy-Con / Pro 手把及 MFi 認證控制器。
 * 📳 **CoreHaptics 觸覺震動回饋**：吞嚥、消化破裂、爆炸與瀕死警報均有細膩震動。
 
 ---
@@ -72,6 +70,12 @@ iOS 正式版即將迎來 **v2.0.2 重大改版**（審查中，敬請期待）�
 
 ### 3. 動態 5 物件生態圈 (5-Item Dynamic Density)
 * 遊戲場景隨時維持 **5 個物件**（食物蛋保證至少 3 顆，特殊戰術道具上限 2 個），告別枯燥等待，每一次轉向都是決策。
+
+### 4. 搶食蛇 (Rival Snake)
+* **出場**：每個世界第 5 子關卡起（1-5、2-5、3-5……），從離你最遠的角落冒出，先閃爍 1.5 秒預警（這段時間碰不死）。只在一般模式與地圖模式出現。
+* **搶蛋 → 消化 → 追尾**：牠會搶最近的蛋（被搶走的不算你的過關數）；搶到後消化 3 秒，身上看得到腫塊、速度減半；消化完頭頂跳「!」、蛇頭變紅，追咬你的尾巴 3 秒。
+* **致命**：你的頭撞到牠，或牠的頭撞到你，都會陣亡（`RIVAL`）。牠本來就比空腹的你慢，直線逃開就甩得掉——但吃得越撐，你就越跑不動。
+* **反擊**：鑽石無敵期間撞到牠，可以把牠撞飛（+150 分），6 秒後重生。
 
 ---
 
@@ -129,7 +133,7 @@ iOS 正式版即將迎來 **v2.0.2 重大改版**（審查中，敬請期待）�
 2. **`8-SHADE`（8 階灰綠階調）**：
    - 細膩的經典掌機灰綠陰影階調，層次分明。
 3. **`4-DMG`（初代 4 階綠經典液晶）**：
-   - 完美復刻 1989 年初代 Game Boy（DMG-01）的經典 4 色草綠液晶點陣質感。
+   - 重現初代掌機經典 4 色草綠液晶點陣質感。
 
 ---
 
@@ -173,8 +177,8 @@ iOS 正式版即將迎來 **v2.0.2 重大改版**（審查中，敬請期待）�
 
 ```bash
 # 1. 複製本倉庫
-git clone https://github.com/mkjohnny1003/gutsy-web.git
-cd gutsy-web
+git clone https://github.com/mkjohnny1003/gaboon-viper-web.git
+cd gaboon-viper-web
 
 # 2. 啟動任意本地靜態伺服器 (以 Python 3 為例)
 python3 -m http.server 8080
