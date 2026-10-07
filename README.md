@@ -27,8 +27,7 @@
 
 本倉庫為 **胖蛇大作戰網頁純前端試玩版（Web Playable Prototype）**，零外部相依套件，採用原生 HTML5 Canvas + Web Audio API 打造，即開即玩。
 
-👉 **[線上即刻試玩（官方網站）](https://getesimmanager.com/gutsy/play/)**  
-👉 **[GitHub Pages 鏡像試玩](https://mkjohnny1003.github.io/gaboon-viper-web/)**
+👉 **[線上即刻試玩（官方網站）](https://getesimmanager.com/gutsy/play/)**
 
 ---
 
