@@ -1,3 +1,5 @@
+<a name="zh"></a>
+
 # 胖蛇大作戰 Gaboon Viper（原名 GUTSY／腸腸久久）
 
 <p align="center">
@@ -16,6 +18,8 @@
   <img src="https://img.shields.io/badge/Palette-GBA_/_8--SHADE_/_4--DMG-8b5cf6?style=for-the-badge" alt="Palettes">
   <img src="https://img.shields.io/badge/License-MIT-gray?style=for-the-badge" alt="License">
 </p>
+
+<p align="center"><strong>中文</strong> ｜ <a href="#english">English</a></p>
 
 ---
 
@@ -59,7 +63,7 @@ iOS 版 **v2.0.3** 已送交 App Store 審查（通過後自動更新）；本�
 ## 🕹️ 核心遊戲機制 (Core Mechanics)
 
 ### 1. 延遲消化與負重系統 (Delayed Digestion)
-* **食物腫塊（Lump）**：每顆蛋依尺寸不同具備對應體積（1 ~ 5px）。吃下後在蛇頭形成腫塊，每移動一步向後推移一節，在體內持續進行化學消化。
+* **食物腫塊（Lump）**：每顆蛋依尺寸不同具備對應體積（2 ~ 10px）。吃下後在蛇頭形成腫塊，每移動一步向後推移一節，在體內持續進行化學消化。
 * **胃容量超載撐爆（BURST）**：HUD 上方即時顯示胃容量條（`GUT`）。當未消化腫塊總量超過安全上限（`GUT > GUT_MAX`）時，蛇身立即破裂陣亡！
 * **消化負重減速**：胃容量越滿，爬行步伐越沉重緩慢，考驗生死邊緣的走位控制。
 
@@ -149,14 +153,15 @@ iOS 版 **v2.0.3** 已送交 App Store 審查（通過後自動更新）；本�
 
 ### 電腦鍵盤 (Desktop Keyboard)
 
-| 操作動作 | 主要按鍵 | 備用按鍵 | 功能說明 |
-| :--- | :--- | :--- | :--- |
-| **轉向移動** | `↑` `↓` `←` `→`（方向鍵） | `W` `A` `S` `D` | 控制蛇頭轉向；選單切換項目 |
-| **A 鍵（確認 / 開始）** | `Enter` / `Space` | `Z` / `J` | 確認選項、開始遊戲、手冊翻頁 |
-| **B 鍵（返回 / 暫停）** | `Esc` | `X` / `K` | 遊戲中暫停；選單返回上一頁 |
-| **SELECT 鍵（換色）** | `C` | `Shift` | 快速切換 GBA / 8-SHADE / 4-DMG 調色盤 |
-| **START 鍵（暫停）** | `P` | `Enter` | 暫停遊戲 / 繼續遊戲 |
-| **靜音切換** | `M` | — | 一鍵開關背景音樂與音效（LED 燈連動） |
+| 操作動作 | 按鍵 | 功能說明 |
+| :--- | :--- | :--- |
+| **轉向移動** | `↑` `↓` `←` `→`（方向鍵）／ `W` `A` `S` `D` | 控制蛇頭轉向；選單切換項目 |
+| **A 鍵（確認 / 暫停）** | `Space` ／ `Enter` ／ `Z` | 確認選項、開始遊戲、手冊翻頁；遊戲中暫停 |
+| **B 鍵（返回 / 繼續）** | `P` ／ `X`（官網版另可用 `Esc`） | 暫停中繼續遊戲；選單返回上一頁 |
+| **SELECT 鍵** | `C` | 遊戲中開啟 SETTINGS；標題畫面切換 GBA / 8-SHADE / 4-DMG 調色盤 |
+| **靜音切換** | `M` | 一鍵開關背景音樂與音效（LED 燈連動） |
+
+畫面上的 START 鍵與 A 鍵作用相同。
 
 ### Game Over 結算畫面選單
 陣亡時提供直覺選單，不再誤觸重開：
@@ -195,3 +200,183 @@ open http://localhost:8080
 * **使用者支援**：[support.html](https://getesimmanager.com/gutsy/support.html)
 * **隱私政策**：[privacy.html](https://getesimmanager.com/gutsy/privacy.html)
 * **開發者信箱**：mkjohnny@gmail.com
+
+
+---
+
+<a name="english"></a>
+
+# 🇺🇸 English
+
+<p align="center"><a href="#zh">中文</a> ｜ <strong>English</strong></p>
+
+## 📖 Overview
+
+**Gaboon Viper (Chinese: 胖蛇大作戰; formerly GUTSY / 腸腸久久)** is a snake game that pairs classic handheld dot-matrix visuals with a real digestion-and-weight mechanic.
+
+In classic snake, eating makes you longer instantly. In Gaboon Viper, food becomes a **lump** inside your body that slowly travels toward your tail while it digests. Overeat and your stomach **bursts (BURST)**; go too long without food and you **starve and shrink (STARVE)**.
+
+This repository is the **browser-playable prototype** of Gaboon Viper: a single HTML file with no dependencies, built on HTML5 Canvas and the Web Audio API.
+
+👉 **[Play online (official website)](https://getesimmanager.com/gutsy/play/?lang=en)**
+
+---
+
+## 🚀 What's New in v2.0.3: New Name + Rival Snake
+
+iOS **v2.0.3** has been submitted to App Review (it updates automatically once approved). This web prototype already includes it:
+* 🐍 **Renamed "Gaboon Viper" (胖蛇大作戰)**: new app icon, boot screen, and pixel title. Gameplay and saves are unchanged.
+* ⚔️ **New challenge — the Rival Snake**: from stage 5 of every world, a triangle-headed viper competes for your eggs. After each steal it must digest (a visible bulge, moving slowly); then its head turns red and it chases your tail. One touch is fatal, but you can ram it away while invincible from a diamond (+150 points). Appears in Standard and Map modes; Time Attack is unchanged.
+* 📱 **iOS controls fit every screen**: the D-pad and A/B buttons scale to the iPhone screen size, fixing overlapping controls on smaller screens.
+
+---
+
+## 📱 Full iOS Version (App Store)
+
+The full game is available on the Apple App Store — **free, no ads, no in-app purchases, no personal data collected**:
+
+* **Download**: [https://apps.apple.com/app/id6812165648](https://apps.apple.com/app/id6812165648)
+* **Requirements**: iPhone with iOS 17.0 or later
+
+### 🌟 iOS-exclusive features
+* 🗺️ **10 themed worlds, 100 stages**: grassland, cactus desert, brick blocks, cyber circuit board, gut chamber, glacial spikes, clockwork gears, coral reef, volcano core, and the singularity.
+* 🔄 **Portrait and landscape**: rotate freely; landscape places the D-pad and A/B buttons on either side of the screen for a two-handed grip.
+* 🏆 **Apple Game Center global leaderboard**: compete with players worldwide for the longest body and the highest score.
+* 🎮 **Game controller support**: PS5 DualSense, Xbox wireless controllers, Switch Joy-Con / Pro controllers, and MFi controllers.
+* 📳 **Core Haptics feedback**: subtle vibrations for swallowing, digestion, explosions, and danger alerts.
+
+---
+
+## 🕹️ Core Mechanics
+
+### 1. Delayed digestion and weight
+* **Food lumps**: each egg has a size (2–10 px). Swallowing it creates a lump at the head that moves down the body with every step while it digests.
+* **Stomach burst (BURST)**: the `GUT` meter in the HUD shows your current stomach load. If undigested lumps exceed the limit (`GUT > GUT_MAX`), the snake bursts and the run ends.
+* **Weight slows you down**: the fuller your stomach, the slower you move — every turn becomes a risk.
+
+### 2. Hunger and shrinking
+* **6-second hunger timer**: every meal resets a 6-second countdown. When it runs out, the HUD flashes a red `!STARVE!` warning and the music speeds up.
+* **Starvation**: while starving, the snake loses 1 px every 2 seconds. Drop below the minimum length (`LEN < 12px`) and you die of starvation (**TOO EMPTY**).
+
+### 3. Five items on the field
+* The field always holds **5 items** (at least 3 eggs, up to 2 power-ups), so there is always a decision to make.
+
+### 4. Rival Snake
+* **Arrival**: from stage 5 of every world (1-5, 2-5, 3-5, …) it appears in the corner farthest from you and blinks for 1.5 seconds first (it is harmless while blinking). Standard and Map modes only.
+* **Steal → digest → chase**: it goes for the nearest egg (stolen eggs don't count toward your stage goal). After a steal it digests for 3 seconds — you can see the bulge, and it moves at half speed. Then a "!" pops up, its head turns red, and it chases your tail for 3 seconds.
+* **Fatal**: if your head hits it, or its head hits you, you die (`RIVAL`). It is slower than you on an empty stomach, so running straight gets you away — but the more you have eaten, the slower you are.
+* **Fight back**: ram it while invincible from a diamond to knock it out (+150 points); it comes back 6 seconds later.
+
+---
+
+## 🎮 Game Modes
+
+| Mode | Rules | Hunger | Stomach load |
+| :--- | :--- | :---: | :---: |
+| 🟢 **START GAME<br>(Standard)** | Play through 30 stages across the first 3 worlds in order, with saved progress and Continue. | Normal (6 s timer) | Normal (can burst) |
+| 🗺️ **MAP MODE** | Practice any stage of Worlds 1–3 directly. | Normal (6 s timer) | Normal (can burst) |
+| ⚡ **TIME ATTACK<br>(5 minutes)** | Score as much as you can in 5 minutes (300 s). The timer flashes in the last 30 seconds and the music speeds up in the last 60. The run ends with `TIME UP`. | **None (`HNG ∞`)**<br>no shrinking, no starving | **None (`GUT ∞`)**<br>no bursting, no slowdown |
+
+---
+
+## 💎 Items & Balance
+
+Power-ups last 12 seconds and spawn at random. Balance as of v2.0.2:
+
+| Icon | Item | Spawn rate | Effect | Bonus |
+| :---: | :--- | :---: | :--- | :---: |
+| 🧪 | **POISON (laxative)** | **27.5%** | **Emergency reset**: shrinks you by 3 px and instantly clears all undigested lumps. Your recorded **MAX is never reduced**. | — |
+| ⛸️ | **SKATES** | **27.5%** | **Speed boost**: movement interval × 0.82 (stacks, with a speed cap). Resets when you clear a stage. | **+50** |
+| 💣 | **BOMB** | **27.5%** | **Deadly**: touching it blows you up — **unless you are invincible from a diamond**, which defuses it. | defuse **+100** |
+| 💎 | **DIAMOND** | **7.5%** | **8 seconds of invincibility**: immune to everything except walls (obstacles, self-bites, bombs, bursting, the rival snake). | **+200** |
+| ⚗️ | **ENZYME** | **10.0%** | **3× digestion** for 5 seconds, turning stomach load into length fast. | **+50** |
+
+---
+
+## 📟 HUD
+
+```
+[Row 1]  TIME 02:45    STAGE 1-3 (5/8)    LEN 28
+[Row 2]  MAX 32        HNG 4S (or ∞)      SCORE 1450    INV 5S    GUT [■■■■□□] (or ∞)
+```
+
+* **`TIME`**: survival time (+2 points per second); counts down in Time Attack.
+* **`STAGE`**: current stage and eggs eaten / eggs needed to clear.
+* **`LEN`**: current body length in pixels; below 12 px you starve.
+* **`MAX`**: longest length reached this run. Scored as `MAX × 5` (shrinking from poison does not reduce it).
+* **`HNG`**: hunger countdown (resets to 6 s, flashes red at 2 s or less; shows `HNG ∞` in Time Attack).
+* **`SCORE`**: live total (item bonuses + MAX × 5 + seconds survived × 2).
+* **`INV / FAST`**: time left on invincibility / skates boost.
+* **`GUT`**: stomach load bar (green → yellow → flashing red; shows `GUT ∞` in Time Attack).
+
+---
+
+## 🎨 Palette Modes
+
+Switch with `SELECT` (keyboard `C`) on the title screen, or in the `SETTINGS` menu:
+
+1. **`GBA COLOR`** — full-color pixels at the native 240 × 216 resolution: gradient green snake, glowing amber lumps, rainbow invincibility, metallic bombs, grassland, desert sand, and seven-color bricks.
+2. **`8-SHADE`** — an eight-level gray-green palette with fine shading.
+3. **`4-DMG`** — the classic four-tone green LCD look of first-generation handhelds.
+
+---
+
+## 🔊 8-bit Chiptune Audio
+
+* **Adaptive BGM**: the music speeds up from 1.0× to 1.65× with survival time, skates, and the last 2 seconds of hunger.
+* **Start fanfare**: a three-note rising jingle into the first beat.
+* **White-noise explosions**: synthesized blast effects.
+* **Volume and mute**: four volume levels in SETTINGS (OFF / 35% / 70% / 100%), plus a red MUTE LED on the shell (`M` to toggle).
+
+---
+
+## ⌨️ Controls
+
+### Keyboard
+
+| Action | Keys | What it does |
+| :--- | :--- | :--- |
+| **Move** | `↑` `↓` `←` `→` / `W` `A` `S` `D` | Steer the snake; move through menus |
+| **A (confirm / pause)** | `Space` / `Enter` / `Z` | Confirm, start, turn manual pages; pause during play |
+| **B (back / resume)** | `P` / `X` (the website version also accepts `Esc`) | Resume when paused; go back in menus |
+| **SELECT** | `C` | Open SETTINGS during play; switch palettes on the title screen |
+| **Mute** | `M` | Toggle music and sound (the LED follows) |
+
+The on-screen START button works the same as A.
+
+### Game Over menu
+* `▲` / `▼`: choose `RETRY` or `RETURN TO TITLE`
+* `A` (Enter / Space): confirm
+* `B`: return to the title screen
+
+### Mobile
+* **On-screen buttons**: D-pad, A / B buttons, START / SELECT, and the mute LED.
+* **Swipe**: swipe anywhere on the game screen to turn; tap to press A.
+
+---
+
+## 💻 Run Locally
+
+No build step or dependencies — any static web server works:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/mkjohnny1003/gaboon-viper-web.git
+cd gaboon-viper-web
+
+# 2. Start a static server (Python 3 example)
+python3 -m http.server 8080
+
+# 3. Open it in your browser
+open http://localhost:8080
+```
+
+---
+
+## 📄 License & Contact
+
+* **License**: MIT
+* **Website**: [https://getesimmanager.com/gutsy/en/](https://getesimmanager.com/gutsy/en/)
+* **Support**: [support.html](https://getesimmanager.com/gutsy/en/support.html)
+* **Privacy**: [privacy.html](https://getesimmanager.com/gutsy/en/privacy.html)
+* **Email**: mkjohnny@gmail.com
