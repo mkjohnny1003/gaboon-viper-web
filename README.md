@@ -37,7 +37,7 @@
 
 ## 🚀 v2.0.3 更新：改名「胖蛇大作戰」＋搶食蛇 (What's New)
 
-iOS 版 **v2.0.3** 已送交 App Store 審查（通過後自動更新）；本網頁試玩版已搶先同步：
+iOS 版 **v2.0.3** 已在 App Store 上線（2026-10-08）；本網頁試玩版同步收錄：
 * 🐍 **更名「胖蛇大作戰（Gaboon Viper）」**：全新 App 圖示、開機畫面與點陣標題，玩法與存檔不受影響。
 * ⚔️ **全新挑戰「搶食蛇」**：每個世界第 5 關起，三角頭毒蛇會跟你搶蛋；搶到後要先消化（身上鼓一塊、變慢），消化完蛇頭一紅就回頭追咬你的尾巴。被牠碰到就陣亡，鑽石無敵時則能反撞把牠撞飛（+150 分）。一般與地圖模式登場，計時賽不受影響。
 * 📱 **iOS 按鍵自動適配螢幕**：十字鍵與 A/B 依 iPhone 螢幕尺寸縮放，修正小螢幕按鍵重疊。
@@ -224,7 +224,7 @@ This repository is the **browser-playable prototype** of Gaboon Viper: a single 
 
 ## 🚀 What's New in v2.0.3: New Name + Rival Snake
 
-iOS **v2.0.3** has been submitted to App Review (it updates automatically once approved). This web prototype already includes it:
+iOS **v2.0.3** is now on the App Store (October 8, 2026). This web prototype includes it too:
 * 🐍 **Renamed "Gaboon Viper" (胖蛇大作戰)**: new app icon, boot screen, and pixel title. Gameplay and saves are unchanged.
 * ⚔️ **New challenge — the Rival Snake**: from stage 5 of every world, a triangle-headed viper competes for your eggs. After each steal it must digest (a visible bulge, moving slowly); then its head turns red and it chases your tail. One touch is fatal, but you can ram it away while invincible from a diamond (+150 points). Appears in Standard and Map modes; Time Attack is unchanged.
 * 📱 **iOS controls fit every screen**: the D-pad and A/B buttons scale to the iPhone screen size, fixing overlapping controls on smaller screens.
@@ -375,7 +375,7 @@ open http://localhost:8080
 
 ## 📄 License & Contact
 
-* **License**: MIT
+* **License**: [MIT License](LICENSE)
 * **Website**: [https://getesimmanager.com/gutsy/en/](https://getesimmanager.com/gutsy/en/)
 * **Support**: [support.html](https://getesimmanager.com/gutsy/en/support.html)
 * **Privacy**: [privacy.html](https://getesimmanager.com/gutsy/en/privacy.html)
