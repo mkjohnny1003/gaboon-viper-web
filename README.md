@@ -99,7 +99,8 @@ iOS 版 **v2.0.3** 已在 App Store 上線（2026-10-08）；本網頁試玩版�
 | 道具圖示 | 道具名稱 | 出現機率 | 戰術功能與效果 | 獎勵分數 |
 | :---: | :--- | :---: | :--- | :---: |
 | 🧪 | **毒藥（POISON）** | **27.5%** | **代價重置鍵**：長度立即縮減 3px，並瞬間清空體內所有未消化腫塊（長度成長折損，但**不會倒扣歷史最高 MAX**），極速化解胃超載危機！ | — |
-| ⛸️ | **溜冰鞋（SKATES）** | **27.5%** | **極速衝刺**：移動週期縮短至 ×0.82（可疊加，速度有安全上限），子關卡晉級時自動重置。 | **+50** |
+| ⛸️ | **溜冰鞋（SKATES）** | **17.5%** | **極速衝刺**：移動週期縮短至 ×0.82（可疊加，速度有安全上限），子關卡晉級時自動重置。 | **+50** |
+| 🩴 | **木屐（CLOG）** | **10.0%** | **踩煞車**：跟溜冰鞋相反，移動週期拉長 ×1.22（可疊加，最慢到原速的 2/3），一個木屐剛好抵銷一雙溜冰鞋，子關卡晉級時自動重置。（v2.0.4 新增） | **+50** |
 | 💣 | **炸彈（BOMB）** | **27.5%** | **致命爆裂物**：經典加農砲圓球造型，帶有火花引信。直接碰觸立即被炸碎身亡；**僅在鑽石護盾期間可主動踩爆化解**！ | 踩爆 **+100** |
 | 💎 | **鑽石（DIAMOND）** | **7.5%**<br>*(機率減半)* | **8 秒無敵無畏金身**：全場彩虹星芒流光！免疫除撞外牆以外的一切死因（免疫撞障礙、撞自己、撞炸彈、胃撐爆）。衝刺踩炸彈賺高分的黃金時刻！ | 吃下 **+200** |
 | ⚗️ | **消化酵素（ENZYME）** | **10.0%** | **代謝 3 倍超頻**：5 秒內體內所有腫塊消化速度暴增 300%，極速將胃容量負載轉化為真實長度！ | **+50** |
@@ -121,7 +122,7 @@ iOS 版 **v2.0.3** 已在 App Store 上線（2026-10-08）；本網頁試玩版�
 * **`MAX`**：本局歷史最大體長。結算時依照 `MAX × 5` 進行核心倍率計分（吃毒藥縮短不扣此項）。
 * **`HNG`**：飢餓倒數（6 秒重置，$\le 2$ 秒紅色閃爍；計時模式顯示為 `HNG ∞`）。
 * **`SCORE`**：即時動態總分（公式：道具得分 + MAX×5 + 生存秒數×2）。
-* **`INV / FAST`**：目前生效中的特殊增益剩餘秒數（無敵金身 / 溜冰鞋加速）。
+* **`INV / FAST / SLOW`**：目前生效中的特殊狀態（無敵金身剩餘秒數 / 溜冰鞋加速 / 木屐減速）。
 * **`GUT`**：消化胃容量長條圖（正常綠 $\rightarrow$ 警告黃 $\rightarrow$ 超載紅光閃爍；計時模式顯示為 `GUT ∞`）。
 
 ---
@@ -286,7 +287,8 @@ Power-ups last 12 seconds and spawn at random. Balance as of v2.0.2:
 | Icon | Item | Spawn rate | Effect | Bonus |
 | :---: | :--- | :---: | :--- | :---: |
 | 🧪 | **POISON (laxative)** | **27.5%** | **Emergency reset**: shrinks you by 3 px and instantly clears all undigested lumps. Your recorded **MAX is never reduced**. | — |
-| ⛸️ | **SKATES** | **27.5%** | **Speed boost**: movement interval × 0.82 (stacks, with a speed cap). Resets when you clear a stage. | **+50** |
+| ⛸️ | **SKATES** | **17.5%** | **Speed boost**: movement interval × 0.82 (stacks, with a speed cap). Resets when you clear a stage. | **+50** |
+| 🩴 | **CLOG** | **10.0%** | **Brake**: the opposite of skates. Movement interval × 1.22 (stacks down to 2/3 speed); one clog cancels one pair of skates. Resets when you clear a stage. (New in v2.0.4) | **+50** |
 | 💣 | **BOMB** | **27.5%** | **Deadly**: touching it blows you up — **unless you are invincible from a diamond**, which defuses it. | defuse **+100** |
 | 💎 | **DIAMOND** | **7.5%** | **8 seconds of invincibility**: immune to everything except walls (obstacles, self-bites, bombs, bursting, the rival snake). | **+200** |
 | ⚗️ | **ENZYME** | **10.0%** | **3× digestion** for 5 seconds, turning stomach load into length fast. | **+50** |
@@ -306,7 +308,7 @@ Power-ups last 12 seconds and spawn at random. Balance as of v2.0.2:
 * **`MAX`**: longest length reached this run. Scored as `MAX × 5` (shrinking from poison does not reduce it).
 * **`HNG`**: hunger countdown (resets to 6 s, flashes red at 2 s or less; shows `HNG ∞` in Time Attack).
 * **`SCORE`**: live total (item bonuses + MAX × 5 + seconds survived × 2).
-* **`INV / FAST`**: time left on invincibility / skates boost.
+* **`INV / FAST / SLOW`**: time left on invincibility / skates boost / clog slowdown.
 * **`GUT`**: stomach load bar (green → yellow → flashing red; shows `GUT ∞` in Time Attack).
 
 ---
